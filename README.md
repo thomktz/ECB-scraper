@@ -37,8 +37,8 @@ ecb-scraper --start-year 2019 --end-year 2020 --output-file conferences.json
 The ECB Scraper can also be used as a Python package. Here's how you can use it:
 
 ```python
-from ecb_scraper import get_all_conferences
+from ecb_scraper import load_ecb_conferences
 
 # DataFrame with columns ['date', 'title', 'link', 'text']
-conferences = get_all_conferences(start_year=2005, end_year=2020)
+conferences = load_ecb_conferences(start_year=2005, end_year=2020)
 ```

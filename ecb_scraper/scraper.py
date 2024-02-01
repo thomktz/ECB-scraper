@@ -83,7 +83,7 @@ def get_conference_text(link: str) -> str:
     return text
 
 
-def get_all_conferences(start_year: int = MIN_YEAR, end_year: Optional[int] = None) -> pd.DataFrame:
+def load_ecb_conferences(start_year: int = MIN_YEAR, end_year: Optional[int] = None) -> pd.DataFrame:
     """
     Fetch all conferences from start_year up to end_year.
 
