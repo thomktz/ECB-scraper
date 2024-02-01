@@ -28,9 +28,17 @@ Arguments
 - --end-year: Specify the end year for fetching the conferences. If not provided, the current year is used.
 - --output-file: Required. The path to the file where the fetched data will be saved (CSV or JSON).
 
+Default values
 ```bash
-ecb-scraper --start-year 2019 --end-year 2020 --output-file conferences.json
+ecb-scraper --output-file conferences.json
 ```
+
+Speific dates
+```bash
+ecb-scraper --start-year 2010 --end-year 2020 --output-file conferences.json
+```
+
+
 
 ### Python
 
