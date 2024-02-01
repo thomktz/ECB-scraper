@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "ecb-scraper"
+version = "0.1.0"
+description = "Scraper for ECB press conferences"
+authors = ["Thomas Kientz <thomas@kientz.net>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+beautifulsoup4 = "^4.12.3"
+pandas = "^2.2.0"
+pyarrow = "^15.0.0"
+numexpr = "^2.9.0"
+
+[tool.black]
+line-length = 120
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
