@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ecb-scraper"
-version = "0.1.1"
+version = "0.1.2"
 description = "Scraper for ECB press conferences"
 authors = ["Thomas Kientz <thomas@kientz.net>"]
 license = "MIT"
