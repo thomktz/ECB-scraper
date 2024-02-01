@@ -111,4 +111,5 @@ def load_ecb_conferences(start_year: int = MIN_YEAR, end_year: Optional[int] = N
 
         pbar.set_description(f"Year: {year}/{end_year}, Total conferences: {len(full_dataframe)}")
 
-    return full_dataframe.reset_index(drop=True)
+    full_dataframe["date"] = pd.to_datetime(full_dataframe["date"])
+    return full_dataframe.sort_values(by="date").reset_index(drop=True)
