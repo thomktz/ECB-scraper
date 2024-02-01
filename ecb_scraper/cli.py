@@ -2,7 +2,7 @@
 
 import argparse
 import pandas as pd
-from .scraper import get_all_conferences
+from .scraper import load_ecb_conferences
 from .config import MIN_YEAR
 
 
@@ -41,7 +41,7 @@ def main():
     if args.start_year is None:
         args.start_year = MIN_YEAR  # Make sure MIN_YEAR is imported or defined somewhere
 
-    conferences_df = get_all_conferences(start_year=args.start_year, end_year=args.end_year)
+    conferences_df = load_ecb_conferences(start_year=args.start_year, end_year=args.end_year)
 
     save_data(conferences_df, args.output_file)
 
