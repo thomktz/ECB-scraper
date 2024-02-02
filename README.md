@@ -50,3 +50,8 @@ from ecb_scraper import load_ecb_conferences
 # DataFrame with columns ['date', 'title', 'link', 'text']
 conferences = load_ecb_conferences(start_year=2005, end_year=2020)
 ```
+
+## Code standards
+
+This project adheres to the default `black` and `flake8` standards, enforced with pre-commit hooks.
+
